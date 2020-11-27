@@ -89,7 +89,7 @@ class Dataset(object):
             self.valdata[i] = self.valdata[i].astype(float)
       self.valdata['text'] = self.valdata['text'].apply(SplitFunc)
 
-    print 'loaded {0} sentences'.format(len(self.data))
+    print ('loaded {0} sentences'.format(len(self.data)))
 
   def GetSentences(self):
     return self.data['text']
